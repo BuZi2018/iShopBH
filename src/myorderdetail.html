@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("include/headerlink.html") @@include("include/footerlink.html")
+    <title>订单详情</title>
+    <link rel="stylesheet" href="style/myorderdetail.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar fixed-top navbar-light bg-light">
+        <div class="float-left">
+            <a href="javascript:history.go(-1);" class="bh-back">
+                <span class="oi oi-chevron-left"></span>
+            </a>
+        </div>
+        <div class="col text-center">
+            订单详情
+        </div>
+    </nav>
+    <!-- Content -->
+    <div class="container">
+        <div class="row">
+            <table class="table table-bordered" >
+                <thead>
+                    <tr style="text-align: center;">
+                        <th>201712141402447164346 (已付款)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>收货信息</th>
+                    </tr>
+                    <tr>
+                    	<td>
+                    		小王<br>
+							江苏苏州姑苏区江苏省苏州市看看<br>
+							1355555555<br>
+                    	</td>
+                    </tr>
+                     <tr>
+                        <th>订单信息</th>
+                    </tr>
+                    <tr>
+                    	<td>
+                    		<table class="table table-bordered bh-order-goods">
+                    			<tr>
+                    				<th>商品信息</th>
+                    				<th>单价(元)</th>
+                    				<th>积分</th>
+                    				<th>数量</th>
+                    				<th>总金额</th>
+                    				<th>总积分</th>
+                    			</tr>
+                    			<tr>
+                    				<td>
+                    					<img src="images/good.jpg" alt="" height="25px" width="25px;">
+                    					<span>护发素</span>
+                    				</td>
+                    				<td>￥15.00</td>
+                    				<td>1392</td>
+                    				<td>x 29</td>
+                    				<td>￥435.00</td>
+                    				<td>40368</td>
+                    			</tr>
+                    			<tr class="bh-order-amount">
+                    				<td colspan="6">
+                    					<span>总额(含运费)：￥2025.00 </span>
+                    					<br>
+                    					<span>总积分：72096</span>
+                    				</td>
+                    			</tr>
+                    		</table>
+                    	</td>
+                    </tr>
+                    <tr>
+                    	<th>物流信息</th>
+                    </tr>
+                    <tr>
+                    	<td>
+                    		发货时间： <span>2017-10-20</span>
+                    		<br>
+                    		<span style="color: #f00;">物流查询电话：蔡小姐18014783001</span>
+                    	</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
