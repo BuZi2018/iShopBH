@@ -1,12 +1,48 @@
+body{
+    padding-top: 0;
+}
 
 
+.bh-index-cat{
+    margin-top: 4px;
+    background-color: #fff;
+    .row{
+        padding: 0 10px;
+        .col-3{
+            padding: 6px;
+            font-size: 10px;
+            text-align: center;
+            a{
+                color: #333;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.bh-index-cat-img{
+    border:1px solid #ccc;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin: 0 auto;
+    // background-color: #A2BF51;
+    img{
+        height: 45px;
+        width: 45px;
+    }
+}
 
 .bh-index-content {
-    margin-top: 15px;
     background-color: #fff;
     .bh-index-title {
-        height: 40px;
-        line-height: 40px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #D82B34;
+        width: 100%;
+        color: #fff;
+        font-size: 1.2rem;
+        margin-bottom: 0;
     }
     div {
         .col-6:nth-of-type(odd) {
@@ -49,6 +85,77 @@
             margin-top: 5px;
             margin-bottom: 10px;
             font-weight: bold;
+        }
+    }
+}
+
+
+.bh-index-content{
+    .row{
+        ul{
+            padding: 0;
+        }
+        li{
+            list-style: none;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+    }
+}
+
+.bh-index-goods-left{
+    border: 1px solid #f00;
+    padding: 0px;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+.bh-index-goods-right{
+    padding-left :10px;
+    padding-right: 0; 
+    p{
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    .bh-show-dian{
+        display: block;
+        color: #838383;
+        width: 220px;
+    }
+}
+
+.bh-index-goods-price{
+    font-size: 12px;
+    color: #333;
+    .bh-igp-price{
+        display: inline-block;
+        color: #f00;
+        margin-top: 35px;
+        font-size: 20px;
+    }
+    button{
+        background-color: #966E30;
+        color: #fff;
+        height: 30px;
+        width: 80px;
+        font-size: 13px;
+        font-weight: bold;
+        padding: 0;
+        margin-left: 12px;
+    }
+}
+
+
+
+
+
+.bh-index-content{
+    .row{
+        .row{
+            margin: 0;
+            padding: 5px 10px;
         }
     }
 }
