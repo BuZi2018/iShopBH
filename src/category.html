@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("include/headerlink.html") @@include("include/footerlink.html")
+    <title>全部商品</title>
+    <link rel="stylesheet" href="style/category.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar fixed-top navbar-light bg-light bh-index-nav">
+        <div class="col bh-search" style="padding-left: 0">
+            <input type="text" class="form-control" placeholder="搜索" id="btnSearch">
+            <span class="oi oi-magnifying-glass"></span>
+        </div>
+        <div class="bh-header-cart" onclick="location.href='cart.html'">
+            <img src="images/cart.png" alt="">
+            <span>1</span>
+        </div>
+    </nav>
+    <!-- Content -->
+    <div class="bh-cat-content bh-h-full">
+        <div class="container bh-h-full">
+            <div class="row clearfix bh-h-full">
+                <div class="col-4 bh-cat-left">
+                    <ul>
+                        <li class="active">生活日用品</li>
+                        <li>个人护理品</li>
+                        <li>美容护肤品</li>
+                        <li>女性护理品</li>
+                        <li>家居日用品</li>
+                        <li>母婴洗护</li>
+                        <li>华丽东方</li>
+                    </ul>
+                </div>
+                <div class="col bh-cat-right">
+                    <div class="container">
+                        <div class="row">
+                            <img src="images/cat_top.jpg" alt="" height="70px" width="100%;">
+                        </div>
+                        <div class="row bh-cat-item">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-info" onclick="location.href='goodslist.html'">纯生物果蔬超浓缩洗液</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-info">厨卫用具</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-info">厨卫用具</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-info">厨卫用具</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <nav class="navbar fixed-bottom navbar-light bg-light bh-footer">
+        <a class="navbar-brand text-center " href="index.html">
+            <!-- <img src="images/home1.png" alt=""> -->
+            <img src="images/home.png" alt="">
+            <span>首页</span>
+        </a>
+        <a class="navbar-brand text-center active" href="category.html">
+            <img src="images/goods_active.png" alt="">
+            <span>全部商品</span>
+        </a>
+        <a class="navbar-brand text-center" href="my.html">
+            <img src="images/my.png" alt="">
+            <span>我的</span>
+        </a>
+    </nav>
+    <script>
+    $(function() {
+        $(".bh-cat-left ul li").click(function() {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+
+        //搜索
+        $("#btnSearch").click(function(){
+            location.href = "search.html";
+        });
+    });
+    </script>
+</body>
+
+</html>

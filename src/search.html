@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("include/headerlink.html") @@include("include/footerlink.html")
+    <title>搜索</title>
+    <link rel="stylesheet" href="style/search.css">
+</head>
+
+<body id="bh-search">
+    <!-- Header -->
+    <nav class="navbar fixed-top navbar-light bg-light bh-index-nav">
+        <div class="col bh-search" style="padding-left: 0">
+            <input type="text" class="form-control" placeholder="搜索">
+            <span class="oi oi-magnifying-glass"></span>
+        </div>
+        <div class="bh-header-cart">
+            <a href="goodslist.html">搜索</a>
+        </div>
+    </nav>
+    <!-- Content -->
+    <div class="container bh-h-full bh-search-content">
+        <h5>热门搜索</h5>
+        <span onclick="location.href='goodslist.html'">净美果</span>
+        <span>面膜</span>
+        <span>美眼计</span>
+        <span>悄悄红</span>
+        <span>托玛琳水杯</span>
+        <span>卫生巾</span>
+    </div>
+</body>
+
+</html>
