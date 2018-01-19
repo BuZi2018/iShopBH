@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include("include/headerlink.html") @@include("include/footerlink.html")
+    <title>会员转账</title>
+    <style>
+    #tabVIP td input.form-control {
+        width: 170px;
+    }
+
+    #tabVIP td {
+        vertical-align: middle;
+        padding: 5px 10px;
+    }
+
+    .tabHistory td,
+    .tabHistory th {
+        font-size: 14px;
+    }
+
+    #modalHistory .table th{
+		font-size: 13px;
+    }
+    </style>
+</head>
+
+<body style="background-color: #fff;padding-top: 10px;">
+    <div class="container">
+        <table class="table table-bordered" id="tabVIP">
+            <tr>
+                <!-- 会员编号  +  会员姓名 -->
+                <td>ZG001</td>
+                <td>我的姓名</td>
+            </tr>
+            <tr>
+                <td>积分</td>
+                <td>25600</td>
+            </tr>
+            <tr>
+                <td>购物币</td>
+                <td>99997874.50</td>
+            </tr>
+            <tr>
+                <td>转入会员编号</td>
+                <td>
+                    <input type="text" class="form-control" placeholder="">
+                </td>
+            </tr>
+            <tr>
+                <td>转入会员姓名</td>
+                <td>
+                    <input type="text" class="form-control" placeholder="请填写会员真实姓名">
+                </td>
+            </tr>
+            <tr>
+                <td>转账数量</td>
+                <td>
+                    <input type="number" class="form-control" placeholder="" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td>备注</td>
+                <td>
+                    <input type="text" class="form-control" placeholder="">
+                </td>
+            </tr>
+            <tr>
+                <td>交易密码</td>
+                <td>
+                    <input type="password" class="form-control" placeholder="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- 默认显示3条，点击历史记录 显示 Modal 近10天数据-->
+                    <a href="javascript:" onclick="historyClick()">历史记录</a>
+                </td>
+                <td>
+                    <button class="btn btn-info float-right">提交</button>
+                </td>
+            </tr>
+        </table>
+        <!-- 显示最近10天 -->
+        <table class="table table-bordered tabHistory">
+            <tr>
+                <th>转账时间</th>
+                <th>数量</th>
+                <th>转出编号</th>
+                <th>接受编号</th>
+            </tr>
+            <tr>
+                <td>2017/12/19</td>
+                <td>900</td>
+                <td>ZG001</td>
+                <td>SZ002</td>
+            </tr>
+            <tr>
+                <td>2017/12/19</td>
+                <td>900</td>
+                <td>ZG001</td>
+                <td>SZ002</td>
+            </tr>
+            <tr>
+                <td>2017/12/19</td>
+                <td>900</td>
+                <td>ZG001</td>
+                <td>SZ002</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Footer -->
+    <nav class="navbar fixed-bottom navbar-light bg-light bh-footer">
+        <a class="navbar-brand text-center" href="index.html">
+            <img src="images/home1.png" alt="">
+            <span>首页</span>
+        </a>
+        <a class="navbar-brand text-center" href="notice.html">
+            <img src="images/notice.png" alt="">
+            <span>公告</span>
+        </a>
+        <a class="navbar-brand text-center" href="goodslisttejia.html">
+            <img src="images/price.png" alt="">
+            <span>特价</span>
+        </a>
+        <a class="navbar-brand text-center" href="cart.html">
+            <img src="images/footer_cart.png" alt="">
+            <span>购物车</span>
+        </a>
+        <a class="navbar-brand text-center active" href="my.html">
+            <img src="images/my_active.png" alt="">
+            <span>我的</span>
+        </a>
+    </nav>
+    <!-- Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="modalHistory">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">历史</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered tabHistory">
+                        <tr>
+                            <th>转账时间</th>
+                            <th>数量</th>
+                            <th>转出编号</th>
+                            <th>接受编号</th>
+                        </tr>
+                        <tr>
+                            <td>2017/12/19</td>
+                            <td>900</td>
+                            <td>ZG001</td>
+                            <td>SZ002</td>
+                        </tr>
+                        <tr>
+                            <td>2017/12/19</td>
+                            <td>900</td>
+                            <td>ZG001</td>
+                            <td>SZ002</td>
+                        </tr>
+                        <tr>
+                            <td>2017/12/19</td>
+                            <td>900</td>
+                            <td>ZG001</td>
+                            <td>SZ002</td>
+                        </tr>
+                        <tr>
+                            <td>2017/12/19</td>
+                            <td>900</td>
+                            <td>ZG001</td>
+                            <td>SZ002</td>
+                        </tr>
+                        <tr>
+                            <td>2017/12/19</td>
+                            <td>900</td>
+                            <td>ZG001</td>
+                            <td>SZ002</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    	function historyClick(){
+    		console.log(111);
+    		$('#modalHistory').modal('show')
+    	};
+    </script>
+</body>
+
+</html>
