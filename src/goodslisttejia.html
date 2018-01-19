@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	@@include("include/headerlink.html") @@include("include/footerlink.html")
-	<title>分类</title>
-	<link rel="stylesheet" href="style/goodslist.css">
+    @@include("include/headerlink.html") @@include("include/footerlink.html")
+    <title>特价商品</title>
+    <link rel="stylesheet" href="style/goodslist.css">
 </head>
-<body>
-	<!-- Header -->
-    <nav class="navbar fixed-top navbar-light bg-light bh-index-nav">
-         <div class="float-left" >
+
+<body style="padding-bottom: 57px;height: auto;">
+    <!-- Header -->
+    <nav class="navbar fixed-top navbar-light bg-light">
+        <div class="float-left">
             <a href="javascript:history.go(-1);" class="bh-back">
-                <span class="oi oi-chevron-left"></span>
-            </a>
-        </div>
-        <div class="float-left" style="margin-left: -15px;">
-            生活日用品
-        </div>
-        <div class="bh-search float-right" style="padding-left: 0">
-            <input type="text" class="form-control" placeholder="搜索" id="btnSearch" style="width: 190px;">
-            <span class="oi oi-magnifying-glass"></span>
-        </div>
-    </nav>
-   <!--  <nav class="navbar fixed-top navbar-light bg-light">
-        <div class="float-left" >
-        	<a href="javascript:history.go(-1);" class="bh-back">
         		<span class="oi oi-chevron-left"></span>
         	</a>
         </div>
         <div class="col text-center">
-        	美容护肤品
+            美容护肤品
         </div>
-    </nav> -->
+    </nav>
     <!-- Content -->
     <div class="container bh-index-content">
         <div class="row">
@@ -128,48 +116,29 @@
             </ul>
         </div>
     </div>
-    <!-- Content -->
-    <div class="container bh-gl-content" style="display: none;">
-    	<div class="row">
-    		<div class="col-6" onclick="location.href='goodsdetail.html'">
-    			<img src="images/goods1.jpg" alt="" height="250px" width="100%">
-    			<p class="bh-show-dian">法国红酒法国红酒法国红酒法国红酒法国红酒</p>
-    			<span>价格：￥168</span>
-    		</div>
-    		<div class="col-6">
-    			<img src="images/goods1.jpg" alt="" height="250px" width="100%">
-    			<p class="bh-show-dian">法国红酒法国红酒法国红酒法国红酒法国红酒</p>
-    			<span>价格：￥168</span>
-    		</div>
-    		<div class="col-6">
-    			<img src="images/goods1.jpg" alt="" height="250px" width="100%">
-    			<p class="bh-show-dian">法国红酒法国红酒法国红酒法国红酒法国红酒</p>
-    			<span>价格：￥168</span>
-    		</div>
-    		<div class="col-6">
-    			<img src="images/goods1.jpg" alt="" height="250px" width="100%">
-    			<p class="bh-show-dian">法国红酒法国红酒法国红酒法国红酒法国红酒</p>
-    			<span>价格：￥168</span>
-    		</div>
-    		<div class="col-6">
-    			<img src="images/goods1.jpg" alt="" height="250px" width="100%">
-    			<p class="bh-show-dian">法国红酒法国红酒法国红酒法国红酒法国红酒</p>
-    			<span>价格：￥168</span>
-    		</div>
-    		<div class="col-6">
-    			<img src="images/goods1.jpg" alt="" height="250px" width="100%">
-    			<p class="bh-show-dian">法国红酒法国红酒法国红酒法国红酒法国红酒</p>
-    			<span>价格：￥168</span>
-    		</div>
-    	</div>
-    </div>
-
-    <script>
-        $(function(){
-            $("#btnSearch").click(function(){
-                location.href = "search.html";
-            });
-        });
-    </script>
+    <!-- Footer -->
+    <nav class="navbar fixed-bottom navbar-light bg-light bh-footer">
+        <a class="navbar-brand text-center" href="index.html">
+            <img src="images/home.png" alt="">
+            <span>首页</span>
+        </a>
+        <a class="navbar-brand text-center" href="notice.html">
+            <img src="images/notice.png" alt="">
+            <span>公告</span>
+        </a>
+        <a class="navbar-brand text-center active" href="goodslisttejia.html">
+            <img src="images/price_active.png" alt="">
+            <span>特价</span>
+        </a>
+        <a class="navbar-brand text-center" href="cart.html">
+            <img src="images/footer_cart.png" alt="">
+            <span>购物车</span>
+        </a>
+        <a class="navbar-brand text-center" href="my.html">
+            <img src="images/my.png" alt="">
+            <span>我的</span>
+        </a>
+    </nav>
 </body>
+
 </html>

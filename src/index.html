@@ -34,25 +34,25 @@
     <div class="container bh-index-cat">
         <div class="row">
             <div class="col-3">
-                <a href="">
+                <a href="goodslist.html">
                     <div class="bh-index-cat-img">
-                        <img src="images/cat1.png" alt="">
+                        <img src="images/cat_shryp.jpg" alt="">
                     </div>
                     <span>生活日用品</span>
                 </a>
             </div>
             <div class="col-3">
-                <a href="">
+                <a href="goodslist.html">
                     <div class="bh-index-cat-img">
-                        <img src="images/cat1.png" alt="">
+                        <img src="images/cat_grhl.jpg" alt="">
                     </div>
                     <span>个人护理品</span>
                 </a>
             </div>
             <div class="col-3">
-                <a href="">
+                <a href="goodslist.html">
                     <div class="bh-index-cat-img">
-                        <img src="images/cat1.png" alt="">
+                        <img src="images/cat_mrhf.jpg" alt="">
                     </div>
                     <span>美容护肤品</span>
                 </a>
@@ -60,56 +60,60 @@
             <div class="col-3">
                 <a href="">
                     <div class="bh-index-cat-img">
-                        <img src="images/cat1.png" alt="">
+                        <img src="images/cat_nxsh.jpg" alt="">
                     </div>
-                    <span>生活日用品</span>
+                    <span>女性护理品</span>
                 </a>
             </div>
             <div class="col-3">
                 <a href="">
                     <div class="bh-index-cat-img">
-                        <img src="images/cat1.png" alt="">
+                        <img src="images/cat_jjyp.jpg" alt="">
                     </div>
-                    <span>生活日用品</span>
+                    <span>家居日用品</span>
                 </a>
             </div>
             <div class="col-3">
                 <a href="">
                     <div class="bh-index-cat-img">
-                        <img src="images/cat1.png" alt="">
+                        <img src="images/cat_myxh.jpg" alt="">
                     </div>
-                    <span>生活日用品</span>
+                    <span>母婴洗护</span>
                 </a>
             </div>
             <div class="col-3">
                 <a href="">
                     <div class="bh-index-cat-img">
-                        <img src="images/cat1.png" alt="">
+                        <img src="images/cat_hldf.png" alt="">
                     </div>
-                    <span>生活日用品</span>
+                    <span>华丽东方</span>
                 </a>
             </div>
             <div class="col-3">
                 <a href="">
                     <div class="bh-index-cat-img">
-                        <img src="images/cat1.png" alt="">
+                        <img src="images/cat_pj.jpg" alt="">
                     </div>
-                    <span>生活日用品</span>
+                    <span>配件区</span>
                 </a>
             </div>
         </div>
     </div>
     <!-- Content -->
     <div class="container bh-index-content">
-        <div class="row">
-            <h5 class="text-center bh-index-title">
-            <span>热卖商品</span>
-        </h5>
+        <div class="row" style="position: relative;">
+            <h5 class="text-left bh-index-title">
+                <span>热卖商品</span>
+            </h5>
+            <div class="bh-search float-right">
+                <input type="text" class="form-control" placeholder="搜索" id="btnSearch">
+                <span class="oi oi-magnifying-glass"></span>
+            </div>
         </div>
         <div class="row">
             <ul>
                 <li>
-                    <a href="javascript:" class="clearfix">
+                    <a href="goodsdetail.html" class="clearfix">
                         <div class="row">
                             <div class="bh-index-goods-left col-4">
                                 <img src="images/goods.jpg" alt="">
@@ -126,7 +130,7 @@
                         </div>
                     </a>
                 </li>
-              <li>
+                <li>
                     <a href="javascript:" class="clearfix">
                         <div class="row">
                             <div class="bh-index-goods-left col-4">
@@ -261,11 +265,11 @@
             <img src="images/goods1.png" alt="">
             <span>全部商品</span>
         </a> -->
-        <a class="navbar-brand text-center" href="">
+        <a class="navbar-brand text-center" href="notice.html">
             <img src="images/notice.png" alt="">
             <span>公告</span>
         </a>
-        <a class="navbar-brand text-center" href="">
+        <a class="navbar-brand text-center" href="goodslisttejia.html">
             <img src="images/price.png" alt="">
             <span>特价</span>
         </a>
@@ -278,6 +282,14 @@
             <span>我的</span>
         </a>
     </nav>
+
+    <script>
+        $(function(){
+            $("#btnSearch").click(function(){
+                location.href = "search.html";
+            });
+        });
+    </script>
 </body>
 
 </html>
